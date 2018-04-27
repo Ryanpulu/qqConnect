@@ -32,7 +32,7 @@ func (self *QC)GetDataByOauth(method string){
 }
 
 func readOauthApiMethod(){
-	fileByte,err := ioutil.ReadFile("config/oauthApiMethod.json");
+	fileByte,err := ioutil.ReadFile("oauthApiMethod.json");
 	if nil != err {
 		panic(err)
 	}
